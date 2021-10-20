@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
+    <parameter name="browser" value="Chrome"/>
+    <classes>
+      <class name="com.orangehrm.test.ApplicationTest">
+        <methods>
+          <include name="verifyApplicationLogin" invocation-numbers="1"/>
+          <include name="setupBrowser"/>
+          <include name="startReport"/>
+          <include name="verifyApplicationLogout" invocation-numbers="1"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- com.orangehrm.test.ApplicationTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
