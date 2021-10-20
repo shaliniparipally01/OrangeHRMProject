@@ -10,6 +10,7 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 public class ReadDataFromExcel {
 	
+	//This method will be used to read data from Excel
 	public static String[][] getExcelData(String filename , String sheetname){
 		
 		String[][] data = null;
@@ -34,8 +35,6 @@ public class ReadDataFromExcel {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}	
-		
-		
 		
 		return data;		
 	}
