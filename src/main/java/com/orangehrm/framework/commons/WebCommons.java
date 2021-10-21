@@ -123,9 +123,9 @@ public class WebCommons {
 		wait.until(ExpectedConditions.numberOfElementsToBeMoreThan(locator, 0));
 	}
 	
+	//Method to read properties from Property file
 	public Properties appProperties() {
-		return ReadDataFromPropertyFile.readProperties("Config.properties");
-		
+		return ReadDataFromPropertyFile.readProperties("Config.properties");		
 	}
 
 }
